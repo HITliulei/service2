@@ -24,11 +24,11 @@ public class Consumer {
 
     @GetMapping("/test11")
     public User f(){
-        return mSendRequest.sendRequest("http://gateway/service1/userService/user/1","1.0.0", User.class, RequestMethod.GET);
+        return mSendRequest.sendRequest("http://gateway/service1/userService/users/1","2.0.0", User.class, RequestMethod.GET);
     }
     @GetMapping("/test12")
     public User as(){
-        return mSendRequest.sendRequest("http://gateway/service1/userService/user/1", User.class, RequestMethod.GET);
+        return mSendRequest.sendRequest("http://gateway/service1/userService/users/1", User.class, RequestMethod.GET);
     }
 
     @GetMapping("/test13")
@@ -37,6 +37,6 @@ public class Consumer {
         a.setAge(1221);
         a.setName("afasdfasdf");
         a.setUsername("asdfkjhka");
-        return mSendRequest.sendRequest("http://gateway/service1/userService/puttest","1.0.0", String.class, RequestMethod.PUT,a);
+        return mSendRequest.sendRequest("http://gateway/service1/userService/puttests","2.0.0", String.class, RequestMethod.PUT,a);
     }
 }

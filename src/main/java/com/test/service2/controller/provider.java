@@ -36,4 +36,10 @@ public class provider {
     public String getVersion(){
         return this.version;
     }
+
+
+    @GetMapping("/only")
+    public String only(){
+        return "only 2.0 have";
+    }
 }

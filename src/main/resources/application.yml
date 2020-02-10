@@ -9,9 +9,9 @@ eureka:
     prefer-ip-address: true
     metadata-map:
       serviceName: service2
-      version: v1.0.0
+      version: v2.0.0
       serviceDepencies:
-        service1: v1.0.0, v1.1.0
+        service1: v2.0.0
   client:
     register-with-eureka: true
     fetch-registry: true
