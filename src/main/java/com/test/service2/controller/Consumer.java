@@ -30,6 +30,7 @@ public class Consumer {
     public User as(){
         return mSendRequest.sendRequest("http://gateway/service1/userService/user/1", User.class, RequestMethod.GET);
     }
+
     @GetMapping("/test13")
     public String asa(){
         User a = new User();
